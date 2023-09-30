@@ -1,5 +1,4 @@
 [![MasterHead](https://qrangers.com/wp-content/uploads/2021/09/Banner-Introduction-to-3D-Animation.png)](https://www.facebook.com/mahmoud126125/)
-<a href="https://discord.gg/the7ag" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="the7ag" height="30" width="40" /></a>
 
 <h1 align="center">Hi 👋, I'm Mahmoud Abdelraouf</h1>
 <h3 align="center">Embedded Software Engineer and C++ Developer with Proficiency in Automotive, Desktop Applications, Testing, and Embedded Linux</h3>
