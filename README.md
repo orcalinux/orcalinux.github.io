@@ -7,6 +7,9 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mahmoud-abdelraouf" alt="mahmoud-abdelraouf" /></a> </p>
 
+<a href="https://fb.com/the7ag" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="the7ag" height="30" width="40" /></a>
+
+
 - 🌱 I’m currently learning **Embedded Linux**
 
 - 👨‍💻 All of my projects are available at [https://github.com/Mahmoud-Abdelraouf](https://github.com/Mahmoud-Abdelraouf)
