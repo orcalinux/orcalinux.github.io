@@ -21,7 +21,7 @@
 <a href="https://www.linkedin.com/in/mahmoud-abdelraouf-80b908222/" target="_blank" rel="noopener noreferrer"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn Profile" height="30" width="40" /></a>
 <a href="https://www.facebook.com/mahmoud126125/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="Facebook Profile" height="30" width="40" /></a>
 <a href="https://www.youtube.com/channel/UCmXW_UGZRls-Gp8J4H7jTzg" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="YouTube Channel" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/mahmoud126125" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="mahmoud abdelraouf" height="30" width="40" /></a>
+<a href="https://www.hackerrank.com/mahmoud126125" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="Mahmoud Abdelraouf" height="30" width="40" /></a>
 <a href="https://www.hackerearth.com/@mahmoud126125" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@mahmoud126125" height="30" width="40" /></a>
 </p>
 
