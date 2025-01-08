@@ -1,35 +1,228 @@
-[![MasterHead](https://qrangers.com/wp-content/uploads/2021/09/Banner-Introduction-to-3D-Animation.png)](https://www.facebook.com/mahmoud126125/)
+<h2 align="left">Hi 👋! I'm OrcaLinux, a Software Engineer passionate about Linux kernel development, system programming, low-level programming, C++, Python, embedded bare metal, and embedded Linux.</h2>
 
-<h1 align="center">Hi 👋, I'm Mahmoud Abdelraouf</h1>
-<h3 align="center">Embedded Software Engineer and C++ Developer with Proficiency in Automotive, Desktop Applications, Testing, and Embedded Linux</h3>
+###
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=mahmoud-abdelraouf&label=Profile%20views&color=0e75b6&style=flat" alt="mahmoud-abdelraouf" /> </p>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=OrcaLinux&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=OrcaLinux&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="Top Languages" />
+</div>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mahmoud-abdelraouf" alt="mahmoud-abdelraouf" /></a> 
-</p>
+###
 
-- 🌱 I’m currently learning **Embedded Linux**
+<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif" alt="Fun GIF" />
 
-- 👨‍💻 All of my projects are available at [https://github.com/Mahmoud-Abdelraouf](https://github.com/Mahmoud-Abdelraouf)
+###
 
-- 📫 How to reach me **mahmoud126125@gmail.com**
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="C++" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="Python" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="Linux" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="C" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original.svg" height="30" alt="Embedded C" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" alt="Bash" />
+</div>
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1dxGMJu8WyYfyg_L6ctjqCqW-r4qbX71v/view?usp=drivesdk](https://drive.google.com/file/d/1dxGMJu8WyYfyg_L6ctjqCqW-r4qbX71v/view?usp=drivesdk)
+###
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/mahmoud-abdelraouf-80b908222/" target="_blank" rel="noopener noreferrer"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn Profile" height="30" width="40" /></a>
-<a href="https://www.facebook.com/mahmoud126125/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="Facebook Profile" height="30" width="40" /></a>
-<a href="https://www.youtube.com/channel/UCmXW_UGZRls-Gp8J4H7jTzg" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="YouTube Channel" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/mahmoud126125" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="Mahmoud Abdelraouf" height="30" width="40" /></a>
-<a href="https://www.hackerearth.com/@mahmoud126125" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@mahmoud126125" height="30" width="40" /></a>
-</p>
+<div align="left">
+  <a href="https://youtube.com/yourchannel">
+    <img src="https://img.shields.io/static/v1?message=YouTube&logo=youtube&label=&color=FF0000&logoColor=white&style=for-the-badge" height="35" alt="YouTube" />
+  </a>
+  <a href="https://instagram.com/yourprofile">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&style=for-the-badge" height="35" alt="Instagram" />
+  </a>
+  <a href="https://twitch.tv/yourchannel">
+    <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&style=for-the-badge" height="35" alt="Twitch" />
+  </a>
+  <a href="https://discord.gg/yourinvite">
+    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&style=for-the-badge" height="35" alt="Discord" />
+  </a>
+  <a href="mailto:your.email@gmail.com">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&style=for-the-badge" height="35" alt="Gmail" />
+  </a>
+  <a href="https://linkedin.com/in/yourprofile">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&style=for-the-badge" height="35" alt="LinkedIn" />
+  </a>
+</div>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> </p>
+###
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mahmoud-abdelraouf&show_icons=true&locale=en&layout=compact" alt="mahmoud-abdelraouf" /></p>
+<br clear="both">
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mahmoud-abdelraouf&show_icons=true&locale=en" alt="mahmoud-abdelraouf" /></p>
+<img src="https://raw.githubusercontent.com/OrcaLinux/OrcaLinux/output/snake.svg" alt="Snake Animation" />
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mahmoud-abdelraouf&" alt="mahmoud-abdelraouf" /></p>
+###
+```
+
+---
+
+### **Explanation & Customization Steps:**
+
+1. **Header Section:**
+   - **Original:** `<h2 align="left">Hi 👋! My name is Orca Linux and I'm a ..., from ....</h2>`
+   - **Customized:** Updated to reflect your name, profession, and interests.
+   ```markdown
+   <h2 align="left">Hi 👋! I'm OrcaLinux, a Software Engineer passionate about Linux kernel development, system programming, low-level programming, C++, Python, embedded bare metal, and embedded Linux.</h2>
+   ```
+
+2. **GitHub Stats & Top Languages:**
+   - **Username Replacement:** Changed `maurodesouza` to `OrcaLinux`. Make sure `OrcaLinux` is your actual GitHub username. If not, replace it with the correct one.
+   ```markdown
+   <img src="https://github-readme-stats.vercel.app/api?username=OrcaLinux&..."/>
+   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=OrcaLinux&..."/>
+   ```
+
+3. **Fun GIF:**
+   - **Original:** `<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif"  />`
+   - **Customized:** You can keep this GIF or replace the URL with one that better represents you.
+
+4. **Programming Languages & Tools:**
+   - **Original Icons:** JavaScript, TypeScript, React, HTML5, CSS3, Python, C#.
+   - **Customized Icons:** Updated to C++, Python, Linux, C, Embedded C, and added Bash.
+   ```markdown
+   <div align="left">
+     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="C++" />
+     ...
+   </div>
+   ```
+   - **Note:** Ensure you include all the languages and tools you are proficient in. You can add or remove icons as needed by finding the appropriate [Devicon](https://devicon.dev/) links.
+
+5. **Social Media Badges:**
+   - **Original:** Badges without links.
+   - **Customized:** Wrapped each badge in an `<a>` tag linking to your respective profiles. Replace `yourchannel`, `yourprofile`, `yourinvite`, and `your.email@gmail.com` with your actual URLs and email.
+   ```markdown
+   <a href="https://youtube.com/yourchannel">
+     <img src="https://img.shields.io/static/v1?message=YouTube&logo=youtube&..."/>
+   </a>
+   ```
+
+6. **Snake Animation:**
+   - **Original:** `<img src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/snake.svg" alt="Snake animation" />`
+   - **Customized:** Updated the URL to match your GitHub repository. Ensure that the path `https://raw.githubusercontent.com/OrcaLinux/OrcaLinux/output/snake.svg` is correct. If your repository name or folder structure is different, adjust the URL accordingly.
+
+7. **Additional Tips:**
+   - **Consistency:** Ensure all URLs (GitHub, social media, etc.) are correct and lead to your actual profiles.
+   - **Content Sections:** You can add more sections like **Projects**, **Experience**, **Education**, or **Contact Information** to provide a comprehensive overview.
+   - **Styling:** Feel free to adjust the theme (currently set to `dracula`) or other styling elements to match your personal preference.
+
+### **Final Steps:**
+
+1. **Update GitHub Username:**
+   - Ensure that all instances of `OrcaLinux` in the GitHub stats URLs match your actual GitHub username.
+
+2. **Replace Placeholder Links:**
+   - Update all social media links (`href` attributes) with your actual profile URLs.
+   - Example:
+     ```markdown
+     <a href="https://linkedin.com/in/yourprofile">
+       <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&..."/>
+     </a>
+     ```
+
+3. **Verify Image Links:**
+   - Make sure that all image URLs are correct and the images load properly. If you host any images yourself, ensure they are accessible.
+
+4. **Commit and Push:**
+   - Once you've made all the changes, commit the README.md file to your GitHub repository to see the updates live.
+
+### **Example Final README Preview:**
+
+---
+
+<h2 align="left">Hi 👋! I'm OrcaLinux, a Software Engineer passionate about Linux kernel development, system programming, low-level programming, C++, Python, embedded bare metal, and embedded Linux.</h2>
+
+###
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=OrcaLinux&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=OrcaLinux&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="Top Languages" />
+</div>
+
+###
+
+<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif" alt="Fun GIF" />
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="C++" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="Python" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="Linux" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="C" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original.svg" height="30" alt="Embedded C" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" alt="Bash" />
+</div>
+
+###
+
+<div align="left">
+  <a href="https://youtube.com/yourchannel">
+    <img src="https://img.shields.io/static/v1?message=YouTube&logo=youtube&label=&color=FF0000&logoColor=white&style=for-the-badge" height="35" alt="YouTube" />
+  </a>
+  <a href="https://instagram.com/yourprofile">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&style=for-the-badge" height="35" alt="Instagram" />
+  </a>
+  <a href="https://twitch.tv/yourchannel">
+    <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&style=for-the-badge" height="35" alt="Twitch" />
+  </a>
+  <a href="https://discord.gg/yourinvite">
+    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&style=for-the-badge" height="35" alt="Discord" />
+  </a>
+  <a href="mailto:your.email@gmail.com">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&style=for-the-badge" height="35" alt="Gmail" />
+  </a>
+  <a href="https://linkedin.com/in/yourprofile">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&style=for-the-badge" height="35" alt="LinkedIn" />
+  </a>
+</div>
+
+###
+
+<br clear="both">
+
+<img src="https://raw.githubusercontent.com/OrcaLinux/OrcaLinux/output/snake.svg" alt="Snake Animation" />
+
+###
+```
+
+**Interactive Elements:**
+   - Consider adding a [Visitor Badge](https://github.com/anuraghazra/github-readme-stats#github-readme-stats) to show your profile views or repository stats.
+   
+**Projects Showcase:**
+   - Highlight some of your key projects with descriptions and links. Example:
+     ```markdown
+     ## 🛠️ Projects
+
+     - [Project Name](https://github.com/OrcaLinux/project-name) - Brief description of the project.
+     - [Another Project](https://github.com/OrcaLinux/another-project) - Brief description of the project.
+     ```
+
+**Contact Information:**
+   - Add a section for others to reach out to you.
+     ```markdown
+     ## 📫 Contact Me
+
+     - Email: [your.email@gmail.com](mailto:your.email@gmail.com)
+     - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+     ```
+
+**Badges and Achievements:**
+   - Showcase any certifications, achievements, or contributions.
+     ```markdown
+     ## 🏆 Achievements
+
+     ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=OrcaLinux&layout=compact&theme=dracula)
+     ```
+
+**Consistent Styling:**
+   - Ensure all sections have consistent styling and alignment for a professional look.
