@@ -25,7 +25,7 @@ Fun fact
 
 ---
 
-## Tech Stack:
+## Tech Stack
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -47,15 +47,12 @@ Fun fact
 
 ---
 
-## GitHub Stats:
+## GitHub Stats
 
 <div align="center">
   
   <!-- GitHub Stats Card -->
   <img src="https://github-readme-stats.vercel.app/api?username=orcalinux&theme=dark&hide_border=false&include_all_commits=true&count_private=false" alt="orcalinux GitHub Stats" />
-
-  <!-- Streak Stats Card -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=orcalinux&theme=dark&hide_border=false" alt="orcalinux Streak Stats" />
 
   <!-- Top Langs Card -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orcalinux&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact" alt="orcalinux Top Languages" />
@@ -64,17 +61,10 @@ Fun fact
 
 ---
 
-<!-- Optional Trophies Section
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=orcalinux&theme=onedark&row=1&column=7" alt="Trophies" />
-</p>
--->
-
 ### Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)
 
 ---
-
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?duration=3000&color=F70000&lines=Thanks+for+stopping+by!;Feel+free+to+explore+my+repos!;Let's+build+the+future+of+Linux+%26+IoT." alt="Typing SVG" />
 </p>
