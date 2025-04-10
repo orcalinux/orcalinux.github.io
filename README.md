@@ -1,4 +1,4 @@
-<!-- Banner or Greeting -->
+<!-- Animated Welcome -->
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?duration=3000&color=36BF03&lines=Welcome+to+my+GitHub+Profile!;Low-level+Linux+Wizardry;IoT+and+Embedded+Systems+Enthusiast" alt="Typing SVG" />
 </p>
@@ -23,9 +23,10 @@ Ask me about
 Fun fact  
 **I enjoy diving deep into Linux internals and building custom embedded tools for fun!**
 
+---
 
-<!-- Tech Stack -->
 ## Tech Stack:
+
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -44,28 +45,36 @@ Fun fact
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
 
-<!-- GitHub Stats -->
+---
+
 ## GitHub Stats:
+
 <div align="center">
   
-  <img src="https://github-readme-stats.vercel.app/api?username=orcalinux&theme=dark&hide_border=false&include_all_commits=true&count_private=false" alt="orcalinux's GitHub stats" />
+  <!-- GitHub Stats Card -->
+  <img src="https://github-readme-stats.vercel.app/api?username=orcalinux&theme=dark&hide_border=false&include_all_commits=true&count_private=false" alt="orcalinux GitHub Stats" />
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=orcalinux&theme=dark&hide_border=false" alt="orcalinux's streak stats" />
+  <!-- Streak Stats Card -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=orcalinux&theme=dark&hide_border=false" alt="orcalinux Streak Stats" />
 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orcalinux&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact" alt="orcalinux's top languages" />
+  <!-- Top Langs Card -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orcalinux&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact" alt="orcalinux Top Languages" />
 
 </div>
 
-<!-- Trophies (optional) -->
-<!--
-[![trophy](https://github-profile-trophy.vercel.app/?username=orcalinux&theme=onedark&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+---
+
+<!-- Optional Trophies Section
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=orcalinux&theme=onedark&row=1&column=7" alt="Trophies" />
+</p>
 -->
 
-<!-- Random Dev Quote -->
 ### Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)
 
-<!-- Footer or contact section (optional) -->
+---
+
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?duration=3000&color=F70000&lines=Thanks+for+stopping+by!;Feel+free+to+explore+my+repos!;Let's+build+the+future+of+Linux+%26+IoT." alt="Typing SVG" />
 </p>
