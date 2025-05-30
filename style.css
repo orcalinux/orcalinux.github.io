@@ -46,11 +46,16 @@ body {
 .navbar.scrolled {
   padding: 0.3rem 1.5rem;
 }
-.navbar .logo {
+.logo {
   font-weight: 800;
   text-decoration: none;
   color: var(--accent);
   font-family: "Fira Code", monospace;
+}
+.navbar nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .navbar nav a {
   color: var(--fg);
@@ -134,14 +139,16 @@ body {
 .wrapper.narrow {
   max-width: 760px;
 }
-/* ⇣ NEW: left-align all wrappers ⇣ */
+
+/* ←── LEFT-ALIGN CONTENT ──→ */
 .wrapper,
 .wrapper.narrow {
-  margin-left: 0; /* flush to left edge  */
-  margin-right: auto; /* still allows max-width on narrow variant */
+  margin-left: 0; /* flush left */
+  margin-right: auto; /* cap width on wide screens */
   text-align: left;
 }
 
+/* ───────────  HEADINGS ─────────── */
 h2 {
   font-size: 1.9rem;
   margin: 0.2rem 0 1.3rem;
@@ -150,6 +157,14 @@ h3 {
   margin-top: 0;
 }
 
+/* ───────────  PARAGRAPHS ─────────── */
+/* tighter vertical rhythm + comfortable line length */
+.wrapper p {
+  margin: 0.75rem 0;
+  max-width: 65ch;
+}
+
+/* ───────────  CHIP LIST ─────────── */
 .chip-list {
   list-style: none;
   padding: 0;
@@ -201,17 +216,16 @@ h3 {
   text-decoration: underline;
 }
 
-/* ───────────  QUOTE  ─────────── */
+/* ───────────  QUOTE ─────────── */
 .quote {
-  text-align: left; /* keep quote text left too */
+  text-align: center; /* centre the quote text */
   padding: 3rem 1rem;
   background: var(--bg-soft);
 }
 .quote blockquote {
   font-style: italic;
-  margin: 0;
+  margin: 0 auto;
   max-width: 700px;
-  position: relative;
 }
 .quote span {
   display: block;
@@ -219,11 +233,38 @@ h3 {
   color: var(--fg-muted);
 }
 
-/* ───────────  FOOTER  ─────────── */
+/* ───────────  FOOTER ─────────── */
 footer {
-  text-align: left;
+  text-align: center; /* centre © text */
   padding: 1.3rem 1rem;
   font-size: 0.9rem;
   background: #121212;
   color: #888;
+}
+
+/* ───────────  RESPONSIVE ─────────── */
+@media (max-width: 768px) {
+  /* tighten wrappers */
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+
+  /* collapse grid to single column */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* allow nav links to wrap */
+  .navbar nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar nav a {
+    margin: 0.5rem;
+  }
+
+  /* shrink hero padding */
+  .hero {
+    padding: 4rem 1rem 2rem;
+  }
 }
