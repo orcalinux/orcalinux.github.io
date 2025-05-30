@@ -52,7 +52,8 @@ body {
 
 .about,
 .stack,
-.quote {
+.quote,
+.projects {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
@@ -72,6 +73,33 @@ body {
   padding: 0.6rem 1rem;
   border-radius: 4px;
   font-weight: bold;
+}
+
+.projects .project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #2e2e2e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 5px solid #00fff5;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #00fff5;
+}
+
+.project-card p {
+  color: #ccc;
+}
+
+.project-card a {
+  color: #00fff5;
+  text-decoration: underline;
 }
 
 .quote blockquote {
