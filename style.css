@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #1a1a1d;
+  color: #eee;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.hero .avatar {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.hero h1 {
+  margin: 1rem 0 0.5rem;
+  font-size: 2.5rem;
+}
+
+.hero span {
+  color: #00fff5;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  background-color: #00fff5;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background-color: #fff;
+}
+
+.about,
+.stack,
+.quote {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.stack ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stack li {
+  background: #333;
+  margin: 0.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.quote blockquote {
+  font-style: italic;
+  color: #aaa;
+  border-left: 4px solid #00fff5;
+  padding-left: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #121212;
+  color: #888;
+  font-size: 0.9rem;
+}
