@@ -133,8 +133,15 @@ body {
 }
 .wrapper.narrow {
   max-width: 760px;
-  margin: auto;
 }
+/* ⇣ NEW: left-align all wrappers ⇣ */
+.wrapper,
+.wrapper.narrow {
+  margin-left: 0; /* flush to left edge  */
+  margin-right: auto; /* still allows max-width on narrow variant */
+  text-align: left;
+}
+
 h2 {
   font-size: 1.9rem;
   margin: 0.2rem 0 1.3rem;
@@ -149,7 +156,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .chip-list li {
   background: var(--bg-soft);
@@ -196,13 +203,13 @@ h3 {
 
 /* ───────────  QUOTE  ─────────── */
 .quote {
-  text-align: center;
+  text-align: left; /* keep quote text left too */
   padding: 3rem 1rem;
   background: var(--bg-soft);
 }
 .quote blockquote {
   font-style: italic;
-  margin: 0 auto;
+  margin: 0;
   max-width: 700px;
   position: relative;
 }
@@ -214,7 +221,7 @@ h3 {
 
 /* ───────────  FOOTER  ─────────── */
 footer {
-  text-align: center;
+  text-align: left;
   padding: 1.3rem 1rem;
   font-size: 0.9rem;
   background: #121212;
