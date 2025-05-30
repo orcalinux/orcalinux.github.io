@@ -3,45 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>orcalinux | Embedded & Linux Engineer</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>orcalinux • Embedded & Linux Engineer</title>
+
+    <!--  Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--  Icons (optional)  -->
+    <script
+      src="https://kit.fontawesome.com/a6e0b128ba.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="icon" href="assets/avatar.png" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--  ──╣ NAVBAR ╠──  -->
+    <header class="navbar">
+      <a href="#" class="logo">orcalinux</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/orcalinux" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          <span class="hide-sm">GitHub</span>
+        </a>
+      </nav>
+    </header>
+
+    <!--  ──╣ HERO ╠──  -->
     <section class="hero">
-      <img src="assets/avatar.png" alt="Profile Picture" class="avatar" />
-      <h1>Hi, I'm <span>orcalinux</span></h1>
-      <p>Embedded Linux | System Programming | Kernel Developer</p>
-      <div class="buttons">
-        <a href="https://github.com/orcalinux" class="btn">GitHub</a>
-        <a href="#projects" class="btn btn-secondary">Projects</a>
+      <img src="assets/avatar.png" alt="Profile picture" class="avatar" />
+      <h1>Hi, I’m <span>orcalinux</span></h1>
+      <p class="subtitle">
+        Embedded Linux&nbsp;· Kernel&nbsp;Developer&nbsp;· System Programmer
+      </p>
+
+      <div class="btn-group">
+        <a
+          class="btn primary"
+          href="https://github.com/orcalinux"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a class="btn ghost" href="#projects">Projects</a>
       </div>
     </section>
 
-    <section class="about">
-      <h2>🧠 About Me</h2>
+    <!--  ──╣ ABOUT ╠──  -->
+    <section id="about" class="wrapper narrow">
+      <h2><i class="fa-solid fa-brain"></i> About Me</h2>
       <p>
-        Passionate about Linux kernel development, system-level programming, and
-        GUI apps (GTK, Qt). I thrive on building bare-metal systems, optimizing
-        performance, and creating tools for embedded devices.
+        I’m passionate about Linux kernel development, low-level programming and
+        GUI apps (GTK &amp; Qt). I thrive on building bare-metal systems,
+        optimising performance and creating developer-friendly tools for
+        embedded devices.
       </p>
       <p>
-        Currently collaborating on IoT, DevOps for embedded, and real-time
-        kernel drivers. I love low-level tinkering and automation using Python &
-        Shell scripting.
+        At the moment I’m collaborating on IoT gateways, DevOps for embedded and
+        real-time kernel drivers. I love automation with Python &amp; Bash and
+        I’m always up for deep-dive debugging sessions.
       </p>
     </section>
 
-    <section class="stack">
-      <h2>🧰 Tech Stack</h2>
-      <ul class="tech-list">
+    <!--  ──╣ TECH STACK ╠──  -->
+    <section id="stack" class="wrapper">
+      <h2><i class="fa-solid fa-toolbox"></i> Tech Stack</h2>
+      <ul class="chip-list">
         <li>C</li>
         <li>C++</li>
         <li>Python</li>
         <li>Rust</li>
         <li>Go</li>
-        <li>Qt</li>
-        <li>GTK</li>
+        <li>Qt / GTK</li>
         <li>Linux Kernel</li>
         <li>Bare-Metal</li>
         <li>Bash</li>
@@ -52,55 +90,67 @@
       </ul>
     </section>
 
-    <section id="projects" class="projects">
-      <h2>🚀 Projects</h2>
-      <div class="project-list">
-        <div class="project-card">
+    <!--  ──╣ PROJECTS ╠──  -->
+    <section id="projects" class="wrapper">
+      <h2><i class="fa-solid fa-rocket"></i> Projects</h2>
+
+      <div class="grid">
+        <article class="card">
           <h3>🔧 Zigbee Network Visualizer</h3>
           <p>
-            Qt-based application for real-time Zigbee network graph
-            visualization, with embedded-side support and UART coordination.
+            Qt-based desktop tool for real-time Zigbee network graphs with UART
+            coordinator integration.
           </p>
           <a
             href="https://github.com/orcalinux/Zigbee-Network-Visualizer"
             target="_blank"
-            >View on GitHub</a
+            >View Repo →</a
           >
-        </div>
-        <div class="project-card">
-          <h3>🧠 Embedded Bootloader & FOTA</h3>
+        </article>
+
+        <article class="card">
+          <h3>🧠 Embedded Bootloader &amp; FOTA</h3>
           <p>
-            Custom bootloader with Firmware-Over-The-Air support using MQTT and
-            Node-RED. Built for STM32 and ESP32 systems.
+            Custom bootloader with Firmware-Over-The-Air updates over MQTT /
+            Node-RED for STM32 &amp; ESP32.
           </p>
           <a href="https://github.com/orcalinux/FOTA-Bootloader" target="_blank"
-            >View on GitHub</a
+            >View Repo →</a
           >
-        </div>
-        <div class="project-card">
+        </article>
+
+        <article class="card">
           <h3>🧰 JSON Parser for Embedded C</h3>
           <p>
-            Memory-efficient JSON parser written in ANSI C for use in bare-metal
-            or RTOS environments. Includes tokenizer and accessor APIs.
+            Memory-efficient ANSI-C JSON library featuring tokenizer, accessor
+            API and pretty-printer.
           </p>
           <a
             href="https://github.com/orcalinux/embedded-json-parser"
             target="_blank"
-            >View on GitHub</a
+            >View Repo →</a
           >
-        </div>
+        </article>
       </div>
     </section>
 
+    <!--  ──╣ QUOTE ╠──  -->
     <section class="quote">
       <blockquote>
-        "Any fool can write code that a computer can understand. Good
-        programmers write code that humans can understand." – Martin Fowler
+        “Any fool can write code that a computer can understand. Good
+        programmers write code that humans can understand.”
+        <span>— Martin Fowler</span>
       </blockquote>
     </section>
 
-    <footer>
-      <p>© 2025 orcalinux</p>
-    </footer>
+    <footer>© 2025 orcalinux</footer>
+
+    <script>
+      /* shrink navbar on scroll */
+      const nav = document.querySelector(".navbar");
+      window.addEventListener("scroll", () =>
+        nav.classList.toggle("scrolled", window.scrollY > 20)
+      );
+    </script>
   </body>
 </html>
