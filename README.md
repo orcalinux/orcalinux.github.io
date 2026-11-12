@@ -1,7 +1,7 @@
-# Welcome to orcalinux
+# orcalinux.github.io
 
-> 🐧 Embedded Linux Engineer | Kernel Enthusiast | GUI Craftsman
+Personal site for **orcalinux**: embedded Linux and systems engineer.
 
-Visit my personal site: [https://orcalinux.github.io](https://orcalinux.github.io)
+Live at [orcalinux.github.io](https://orcalinux.github.io). GitHub profile README lives in [orcalinux/orcalinux](https://github.com/orcalinux/orcalinux).
 
-This is my GitHub profile README. Click the link above to explore my full personal site with projects, skills, and more!
+Plain HTML + CSS, no build step. Images are in `assets/`.

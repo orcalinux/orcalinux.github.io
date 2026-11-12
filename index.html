@@ -4,153 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>orcalinux • Embedded & Linux Engineer</title>
+    <meta name="description" content="orcalinux: embedded Linux and systems engineer in Cairo, Egypt. Kernel modules, device drivers, bootloaders, firmware updates and system programming." />
+    <meta name="theme-color" content="#050b12" />
+    <meta property="og:title" content="orcalinux • Embedded & Linux Engineer" />
+    <meta property="og:description" content="Kernel modules, device drivers, bootloaders, firmware updates and system programming." />
+    <meta property="og:image" content="https://orcalinux.github.io/assets/og.png" />
+    <meta property="og:url" content="https://orcalinux.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <!--  Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <!--  Icons (optional)  -->
-    <script
-      src="https://kit.fontawesome.com/a6e0b128ba.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a6e0b128ba.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" href="assets/avatar.png" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--  ──╣ NAVBAR ╠──  -->
     <header class="navbar">
-      <a href="#" class="logo">orcalinux</a>
+      <a href="#" class="logo"><span class="g">orca</span>@linux<span class="m">:~$</span></a>
       <nav>
-        <a href="#about">About</a>
-        <a href="#stack">Tech Stack</a>
-        <a href="#projects">Projects</a>
-        <a href="https://github.com/orcalinux" target="_blank">
-          <i class="fa-brands fa-github"></i>
-          <span class="hide-sm">GitHub</span>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#stack">stack</a>
+        <a href="https://github.com/orcalinux" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i><span class="hide-sm"> github</span>
         </a>
       </nav>
     </header>
 
-    <!--  ──╣ HERO ╠──  -->
-    <section class="hero">
-      <img src="assets/avatar.png" alt="Profile picture" class="avatar" />
-      <h1>Hi, I’m <span>orcalinux</span></h1>
-      <p class="subtitle">
-        Embedded Linux&nbsp;· Kernel&nbsp;Developer&nbsp;· System Programmer
-      </p>
+    <main>
+      <section class="hero">
+        <img src="assets/banner.webp" alt="ORCA LINUX: $ uname -a | make | ./run" class="banner" width="2000" height="548" />
+      </section>
 
-      <div class="btn-group">
-        <a
-          class="btn primary"
-          href="https://github.com/orcalinux"
-          target="_blank"
-        >
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-        <a class="btn ghost" href="#projects">Projects</a>
-      </div>
-    </section>
+      <section id="about" class="wrapper">
+        <h2 class="prompt"><span class="g">orca@linux</span><span class="m">:~$</span> whoami</h2>
+        <div class="about">
+          <img src="assets/avatar.webp" alt="Hooded engineer at three terminals with the ORCA Linux logo" class="avatar" width="640" height="640" />
+          <div class="term">
+            <div class="term-bar"><i></i><i></i><i></i><span><span class="g">orca</span>@linux: ~</span></div>
+            <div class="term-body">
+              <p>Embedded Linux and systems engineer based in Cairo, Egypt.</p>
+              <p>
+                I work close to the hardware: kernel modules, device drivers, bootloaders and
+                firmware updates for ARM Cortex-M, plus Linux system programming, memory management
+                and emulators.
+              </p>
+              <p>
+                When a tool doesn't exist I build it, usually in C, C++ or Python, with a Qt front end
+                when it needs one.
+              </p>
+              <p class="ok">[ OK ] built without warnings. shipping.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!--  ──╣ ABOUT ╠──  -->
-    <section id="about" class="wrapper narrow">
-      <h2><i class="fa-solid fa-brain"></i> About Me</h2>
-      <p>
-        I’m passionate about Linux kernel development, low-level programming and
-        GUI apps (GTK &amp; Qt). I thrive on building bare-metal systems,
-        optimising performance and creating developer-friendly tools for
-        embedded devices.
-      </p>
-      <p>
-        At the moment I’m collaborating on IoT gateways, DevOps for embedded and
-        real-time kernel drivers. I love automation with Python &amp; Bash and
-        I’m always up for deep-dive debugging sessions.
-      </p>
-    </section>
+      <section id="projects" class="wrapper">
+        <h2 class="prompt"><span class="g">orca@linux</span><span class="m">:~$</span> ls ~/projects</h2>
+        <div class="grid">
+          <a class="card" href="https://github.com/orcalinux/bootwire" target="_blank" rel="noopener">
+            <h3><i class="fa-regular fa-folder"></i> bootwire</h3>
+            <p>Reliable firmware updates for ARM Cortex-M over UART: protocol spec, Python library, CLI, desktop app and simulator.</p>
+            <footer><span class="lang py">Python</span><span class="tags">cortex-m · uart · bootloader</span></footer>
+          </a>
+          <a class="card" href="https://github.com/orcalinux/system-programming-under-linux" target="_blank" rel="noopener">
+            <h3><i class="fa-regular fa-folder"></i> system-programming-under-linux</h3>
+            <p>Linux system programming from the STMicroelectronics internship: syscalls, namespaces, a heap allocator, QEMU and Yocto.</p>
+            <footer><span class="lang c">C</span><span class="tags">linux · syscalls · qemu</span></footer>
+          </a>
+          <a class="card" href="https://github.com/orcalinux/embedded-linux-diploma" target="_blank" rel="noopener">
+            <h3><i class="fa-regular fa-folder"></i> embedded-linux-diploma</h3>
+            <p>Kernel development, Yocto image customisation, Raspberry Pi, modern C++ and device drivers for embedded Linux.</p>
+            <footer><span class="lang cpp">C++</span><span class="tags">yocto · drivers · modern c++</span></footer>
+          </a>
+          <a class="card" href="https://github.com/orcalinux/GPS-Distance-Tracking-System" target="_blank" rel="noopener">
+            <h3><i class="fa-regular fa-folder"></i> GPS-Distance-Tracking-System</h3>
+            <p>Embedded GPS distance tracker on ARM in C and assembly, built with CMake and Make.</p>
+            <footer><span class="lang c">C</span><span class="tags">arm · gps · embedded c</span></footer>
+          </a>
+          <a class="card" href="https://github.com/orcalinux/chip8-emulator" target="_blank" rel="noopener">
+            <h3><i class="fa-regular fa-folder"></i> chip8-emulator</h3>
+            <p>CHIP-8 emulator in C with SDL2 graphics and input, configurable window size and colours.</p>
+            <footer><span class="lang c">C</span><span class="tags">emulator · sdl2 · low-level</span></footer>
+          </a>
+          <a class="card" href="https://github.com/orcalinux/c-json" target="_blank" rel="noopener">
+            <h3><i class="fa-regular fa-folder"></i> c-json</h3>
+            <p>Lightweight cross-platform JSON parser for C: objects, arrays, strings, numbers, booleans and null.</p>
+            <footer><span class="lang c">C</span><span class="tags">parser · scanner · json</span></footer>
+          </a>
+        </div>
+      </section>
 
-    <!--  ──╣ TECH STACK ╠──  -->
-    <section id="stack" class="wrapper">
-      <h2><i class="fa-solid fa-toolbox"></i> Tech Stack</h2>
-      <ul class="chip-list">
-        <li>C</li>
-        <li>C++</li>
-        <li>Python</li>
-        <li>Rust</li>
-        <li>Go</li>
-        <li>Qt / GTK</li>
-        <li>Linux Kernel</li>
-        <li>Bare-Metal</li>
-        <li>Bash</li>
-        <li>DevOps</li>
-        <li>Kubernetes</li>
-        <li>Node-RED</li>
-        <li>PlatformIO</li>
-      </ul>
-    </section>
+      <section id="stack" class="wrapper">
+        <h2 class="prompt"><span class="g">orca@linux</span><span class="m">:~$</span> cat toolbox.txt</h2>
+        <ul class="chip-list">
+          <li>C</li><li>C++</li><li>Python</li><li>Rust</li><li>Bash</li><li>Assembly</li>
+          <li>Linux Kernel</li><li>Device Drivers</li><li>Yocto</li><li>QEMU</li>
+          <li>STM32</li><li>ARM Cortex-M</li><li>FreeRTOS</li><li>AUTOSAR</li>
+          <li>Qt / PySide6</li><li>SDL2</li><li>Verilog</li><li>CMake</li><li>Docker</li>
+        </ul>
+      </section>
 
-    <!--  ──╣ PROJECTS ╠──  -->
-    <section id="projects" class="wrapper">
-      <h2><i class="fa-solid fa-rocket"></i> Projects</h2>
+      <section class="quote">
+        <blockquote>
+          “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”
+          <span>— Martin Fowler</span>
+        </blockquote>
+      </section>
+    </main>
 
-      <div class="grid">
-        <article class="card">
-          <h3>Zigbee Network Visualizer</h3>
-          <p>
-            Qt-based desktop tool for real-time Zigbee network graphs with UART
-            coordinator integration.
-          </p>
-          <a
-            href="https://github.com/orcalinux/Zigbee-Network-Visualizer"
-            target="_blank"
-            >View Repo →</a
-          >
-        </article>
-
-        <article class="card">
-          <h3>Embedded Bootloader &amp; FOTA</h3>
-          <p>
-            Custom bootloader with Firmware-Over-The-Air updates over MQTT /
-            Node-RED for STM32 &amp; ESP32.
-          </p>
-          <a href="https://github.com/orcalinux/FOTA-Bootloader" target="_blank"
-            >View Repo →</a
-          >
-        </article>
-
-        <article class="card">
-          <h3>JSON Parser for Embedded C</h3>
-          <p>
-            Memory-efficient ANSI-C JSON library featuring tokenizer, accessor
-            API and pretty-printer.
-          </p>
-          <a
-            href="https://github.com/orcalinux/embedded-json-parser"
-            target="_blank"
-            >View Repo →</a
-          >
-        </article>
-      </div>
-    </section>
-
-    <!--  ──╣ QUOTE ╠──  -->
-    <section class="quote">
-      <blockquote>
-        “Any fool can write code that a computer can understand. Good
-        programmers write code that humans can understand.”
-        <span>— Martin Fowler</span>
-      </blockquote>
-    </section>
-
-    <footer>© 2025 orcalinux</footer>
+    <footer class="site-footer"><code>[ OK ] reached target orcalinux.site</code> · © 2026 orcalinux</footer>
 
     <script>
-      /* shrink navbar on scroll */
       const nav = document.querySelector(".navbar");
-      window.addEventListener("scroll", () =>
-        nav.classList.toggle("scrolled", window.scrollY > 20)
-      );
+      addEventListener("scroll", () => nav.classList.toggle("scrolled", scrollY > 20), { passive: true });
     </script>
   </body>
 </html>
