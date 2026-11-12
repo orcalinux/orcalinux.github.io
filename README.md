@@ -11,4 +11,6 @@ Plain HTML, CSS and a little JavaScript, no build step:
 - `site.js`: theme toggle and live GitHub numbers. The page works without it; the numbers in the HTML are the fallback.
 - `assets/`: images.
 
+When you change `style.css` or `site.js`, change the `?v=` value on its link in `index.html` (for example to the new commit's short hash). GitHub Pages lets browsers cache files for 10 minutes, and without a new `?v=` a visitor can get the new page with an old stylesheet.
+
 Preview locally with `python3 -m http.server` and open http://localhost:8000.
