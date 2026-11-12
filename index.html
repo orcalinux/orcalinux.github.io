@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>orcalinux · Embedded Linux and systems engineer</title>
-    <meta name="description" content="orcalinux: embedded Linux and systems engineer in Cairo, Egypt. Firmware and bootloaders for ARM Cortex-M, Linux kernel and drivers, secure protocols, and the products built on top." />
+    <title>orcalinux · Software engineer, from firmware to the cloud</title>
+    <meta name="description" content="orcalinux: software engineer in Cairo, Egypt. Embedded Linux and firmware, DevOps and infrastructure, security and protocols, and full-stack products." />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0e1215" media="(prefers-color-scheme: dark)" />
-    <meta property="og:title" content="orcalinux · Embedded Linux and systems engineer" />
-    <meta property="og:description" content="Software from the register up: firmware, Linux, protocols and products." />
+    <meta property="og:title" content="orcalinux · Software engineer, from firmware to the cloud" />
+    <meta property="og:description" content="Software from the register up: firmware, Linux, DevOps, security and products." />
     <meta property="og:image" content="https://orcalinux.github.io/assets/og.png" />
     <meta property="og:url" content="https://orcalinux.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -20,7 +20,7 @@
 
     <link rel="icon" href="assets/favicon.png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="style.css?v=49faf74" />
+    <link rel="stylesheet" href="style.css?v=devops1" />
     <script>
       // Apply a saved theme before first paint, so the page never flashes the wrong one.
       try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -57,12 +57,12 @@
     <main id="main">
       <!-- Introduction -->
       <section class="hero container" id="top">
-        <p class="hero-meta"><span class="dot" aria-hidden="true"></span>Embedded Linux &amp; systems engineer · Cairo, Egypt</p>
+        <p class="hero-meta"><span class="dot" aria-hidden="true"></span>Software engineer · Embedded · DevOps · Security · Full-stack · Cairo</p>
         <h1>Software from the register up.</h1>
         <p class="lede">
-          I write firmware and bootloaders for ARM Cortex-M, Linux kernel modules and drivers, and
-          secure communication protocols, then build the desktop and web products that sit on top of them.
-          Most of my work starts at a datasheet and ends in front of a user.
+          I work across the whole stack: firmware and bootloaders for ARM Cortex-M, Linux kernel and drivers,
+          secure protocols, and the desktop and web products on top, then I containerise, test and ship them
+          with CI/CD to Linux servers I run myself. Most of my work starts at a datasheet and ends in production.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">See selected work</a>
@@ -81,10 +81,25 @@
         <div class="container">
           <header class="section-head">
             <h2 id="stack-title">One engineer, the whole stack</h2>
-            <p>Most problems cross layers. A firmware update needs a protocol, a host tool and a screen someone can trust. This is the ground I cover, from the interface down to the silicon.</p>
+            <p>Most problems cross layers. A firmware update needs a protocol, a host tool, a screen someone can trust and a pipeline that ships it. This is the ground I cover, from deployment down to the silicon.</p>
           </header>
 
           <ol class="stack">
+            <li class="layer">
+              <div class="layer-index" aria-hidden="true">06</div>
+              <div class="layer-body">
+                <h3>DevOps &amp; infrastructure</h3>
+                <p>Getting software built, tested and running: Docker and Compose environments, CI/CD pipelines in GitHub Actions with tests, coverage, fuzzing, CodeQL scanning and tagged releases, deploy scripts and systemd services on self-hosted Linux servers, automated backups, and packaging for Debian.</p>
+                <ul class="tags"><li>Docker</li><li>Compose</li><li>GitHub Actions</li><li>CI/CD</li><li>systemd</li><li>Linux servers</li><li>Bash</li><li>CodeQL</li></ul>
+              </div>
+              <div class="layer-proof">
+                <span class="proof-label">See</span>
+                <a href="https://github.com/orcalinux/bootwire/blob/main/.github/workflows/desktop.yml" rel="noopener">BootWire CI (Linux &amp; Windows)</a>
+                <a href="https://github.com/orcalinux/bootwire/blob/main/packaging/build-deb.sh" rel="noopener">Debian packaging</a>
+                <a href="https://github.com/orcalinux/astronvim_config" rel="noopener">dev environment config</a>
+              </div>
+            </li>
+
             <li class="layer">
               <div class="layer-index" aria-hidden="true">05</div>
               <div class="layer-body">
@@ -272,13 +287,14 @@
           <div class="about-text">
             <h2 id="about-title">About</h2>
             <p>
-              I'm an engineer from Cairo who likes to understand a system all the way down before building on it.
+              I'm a software engineer from Cairo who likes to understand a system all the way down before building on it,
+              and all the way out to production after.
               I trained in embedded systems and system programming, including an internship with STMicroelectronics,
               and I publish the course and workshop material I work through so others can use it too.
             </p>
             <p>
-              Today I work across the stack: firmware and bootloaders, Linux internals, secure protocols, and the
-              desktop and web products that people actually use. I care about the parts nobody sees: a protocol
+              Today I work across the stack: firmware and bootloaders, Linux internals, secure protocols, the
+              desktop and web products that people actually use, and the containers, pipelines and servers that keep them running. I care about the parts nobody sees: a protocol
               that survives a pulled cable, a page that works in Arabic as well as English, a tool that tells you
               exactly what went wrong.
             </p>
@@ -297,6 +313,6 @@
       </div>
     </footer>
 
-    <script src="site.js?v=49faf74" defer></script>
+    <script src="site.js?v=devops1" defer></script>
   </body>
 </html>

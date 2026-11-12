@@ -143,11 +143,11 @@ code { font-family: var(--mono); }
 /* ── hero ───────────────────────────────────────── */
 .hero { padding-block: clamp(48px, 9vw, 128px) clamp(56px, 8vw, 104px); }
 .hero-meta {
-  display: inline-flex; align-items: center; gap: var(--s-2);
+  display: inline-flex; align-items: baseline; gap: var(--s-2);
   margin-bottom: var(--s-5);
   color: var(--muted); font: 500 var(--fs-xs)/1.4 var(--mono); letter-spacing: 0.02em;
 }
-.dot { width: 8px; height: 8px; flex: none; border-radius: 50%; background: var(--accent); }
+.dot { width: 8px; height: 8px; flex: none; border-radius: 50%; background: var(--accent); transform: translateY(-1px); }
 .hero h1 {
   max-width: 14ch;
   font-size: var(--fs-hero); line-height: 1.02; letter-spacing: -0.035em;
