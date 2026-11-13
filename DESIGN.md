@@ -41,3 +41,12 @@ Type: JetBrains Mono everywhere (400/600/800). The wordmark is ANSI-Shadow ASCII
 ## Keys
 
 `j k d u g G / n N h q`, `1`–`8` toggle flags.
+
+## orcash — the CRT terminal (`terminal.js`)
+
+Opened with `t`, `` ` ``, the `>_` button in the status line, or "open a terminal" under NAME. A retro CRT monitor over the page: bezel, scanlines, vignette, slow refresh band, phosphor glow, VT323 type.
+
+- Filesystem is generated from the page's own EXAMPLES / FILES / OPTIONS / DESCRIPTION, so it never drifts from the content.
+- Commands: `help ls cd pwd cat tree grep projects open git clone man neofetch whoami uname date echo history clear exit lsmod dmesg make`, plus `orcalinux --<flag>` which filters the page.
+- Tab completion, ↑/↓ history (sessionStorage), Ctrl+L, Ctrl+C, Esc closes.
+- Motion: power-on (bright line opens into the picture), power-off (collapses to a line, then a dot), output prints line by line. All off under `prefers-reduced-motion`.

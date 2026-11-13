@@ -16,7 +16,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,800;1,400&family=VT323&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="site.css" />
 
     <script>
@@ -53,7 +53,7 @@
           <li><a href="#author">AUTHOR</a></li>
         </ul>
         <span class="index-marker" aria-hidden="true"></span>
-        <p class="index-keys" aria-hidden="true"><kbd>j</kbd><kbd>k</kbd> scroll · <kbd>/</kbd> search · <kbd>h</kbd> help</p>
+        <p class="index-keys" aria-hidden="true"><kbd>j</kbd><kbd>k</kbd> scroll · <kbd>/</kbd> search · <kbd>h</kbd> help<br /><kbd>t</kbd> terminal</p>
       </nav>
 
       <main class="page" id="page">
@@ -74,6 +74,7 @@
             <div class="body" data-print>
               <p><b>orcalinux</b> — software engineer, from firmware to the cloud: embedded, Linux, DevOps, security, full-stack. Cairo, Egypt</p>
               <p class="src">source: <a href="https://github.com/orcalinux">github.com/orcalinux</a></p>
+              <button class="try-shell" type="button" data-term-toggle aria-expanded="false" aria-controls="term"><span class="ps1">$</span> open a terminal <kbd>t</kbd></button>
             </div>
           </div>
           <figure class="avatar" data-print>
@@ -277,9 +278,33 @@
       <p class="less-status" id="less-status"><span class="hl">Manual page orcalinux(1)</span> line <span id="less-line" class="num">1</span>/<span id="less-total" class="num">1</span> <span id="less-pct" class="num">(0%)</span> <span class="less-tail">(press h for help or q to quit)</span></p>
       <p class="less-msg" id="less-msg" aria-live="polite"></p>
       <div class="less-btns">
+        <button type="button" class="less-term" data-term-toggle aria-expanded="false" aria-controls="term" aria-label="Open terminal">&gt;_</button>
         <button type="button" data-key="/" aria-label="Search">/</button>
         <button type="button" data-key="h" aria-label="Help">h</button>
         <button type="button" data-key="g" aria-label="Back to top">g</button>
+      </div>
+    </div>
+
+    <div class="term" id="term" role="dialog" aria-label="orcash terminal" hidden>
+      <div class="term-backdrop" data-term-toggle></div>
+      <div class="crt">
+        <div class="crt-top">
+          <span class="crt-led" aria-hidden="true"></span>
+          <span class="crt-title" id="term-title">guest@orca: ~</span>
+          <span class="crt-model" aria-hidden="true">ORCA VT-1 · 9600 BAUD</span>
+          <button class="crt-close" id="term-close" type="button" aria-label="Close terminal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        </div>
+        <div class="crt-screen">
+          <div class="crt-inner">
+            <div class="crt-out" id="term-out" role="log" aria-live="polite"></div>
+            <form class="crt-form" id="term-form" autocomplete="off">
+              <label class="crt-prompt" id="term-prompt" for="term-in"></label>
+              <input id="term-in" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send" aria-label="Terminal command" />
+            </form>
+          </div>
+          <div class="crt-fx" aria-hidden="true"></div>
+        </div>
+        <div class="crt-foot" aria-hidden="true"><span>TAB complete</span><span>↑↓ history</span><span>ESC close</span></div>
       </div>
     </div>
 
@@ -292,6 +317,7 @@
         <dt><kbd>/</kbd><u>pattern</u></dt><dd>Search for pattern.</dd>
         <dt><kbd>n</kbd> <kbd>N</kbd></dt><dd>Next / previous match.</dd>
         <dt><kbd>1</kbd>–<kbd>8</kbd></dt><dd>Toggle a flag: kernel, bootloader, mcu, sysprog, emu, tools, protocols, devops.</dd>
+        <dt><kbd>t</kbd> or <kbd>`</kbd></dt><dd>Open the terminal (try <b>help</b>, <b>neofetch</b>, <b>ls projects</b>).</dd>
         <dt><kbd>h</kbd> <kbd>q</kbd> <kbd>Esc</kbd></dt><dd>Show / close this help.</dd>
       </dl>
       <form method="dialog"><button>close <kbd>q</kbd></button></form>
@@ -303,5 +329,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js" defer></script>
     <script src="main.js" defer></script>
+    <script src="terminal.js" defer></script>
   </body>
 </html>

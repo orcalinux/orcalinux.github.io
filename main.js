@@ -192,6 +192,11 @@
     if (announce) say(activeFlag ? `--${activeFlag}: ${n} example${n === 1 ? "" : "s"} match (see EXAMPLES)` : "flags cleared");
   };
   flagBtns.forEach((b) => b.addEventListener("click", () => applyFlag(b.dataset.flag)));
+  // used by the terminal (terminal.js)
+  window.orcaPage = {
+    setFlag: (f) => { if ((f || null) !== activeFlag) applyFlag(f || activeFlag, { announce: false }); },
+    go: (target) => scrollToY(target),
+  };
   $("#filter-clear").addEventListener("click", () => activeFlag && applyFlag(activeFlag));
 
   /* ───────── 5. copy clone commands ───────── */
@@ -341,6 +346,7 @@
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     const t = e.target;
     if (t.closest && t.closest("input, textarea, select, [contenteditable]")) return;
+    if (document.body.classList.contains("term-open")) return;
     if (help.open && e.key !== "q" && e.key !== "h") return;
     if (/^[1-8]$/.test(e.key)) { applyFlag(FLAGS[+e.key - 1]); return; }
     const fn = keys[e.key];
