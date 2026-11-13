@@ -2,128 +2,287 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>orcalinux • Embedded & Linux Engineer</title>
-    <meta name="description" content="orcalinux: embedded Linux and systems engineer in Cairo, Egypt. Kernel modules, device drivers, bootloaders, firmware updates and system programming." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>orcalinux(1) — embedded Linux &amp; systems engineer</title>
+    <meta name="description" content="orcalinux(1): embedded Linux and systems engineer in Cairo, Egypt. Kernel modules, device drivers, bootloaders, firmware updates, system programming and emulators." />
     <meta name="theme-color" content="#050b12" />
-    <meta property="og:title" content="orcalinux • Embedded & Linux Engineer" />
-    <meta property="og:description" content="Kernel modules, device drivers, bootloaders, firmware updates and system programming." />
+    <meta property="og:title" content="orcalinux(1) — embedded Linux & systems engineer" />
+    <meta property="og:description" content="Kernel modules, device drivers, bootloaders, firmware updates, system programming and emulators." />
     <meta property="og:image" content="https://orcalinux.github.io/assets/og.png" />
     <meta property="og:url" content="https://orcalinux.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/a6e0b128ba.js" crossorigin="anonymous"></script>
-
-    <link rel="icon" href="assets/favicon.png" />
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <a href="#" class="logo"><span class="g">orca</span>@linux<span class="m">:~$</span></a>
-      <nav>
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
-        <a href="#stack">stack</a>
-        <a href="https://github.com/orcalinux" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i><span class="hide-sm"> github</span>
-        </a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <img src="assets/banner.webp" alt="ORCA LINUX: $ uname -a | make | ./run" class="banner" width="2000" height="548" />
-      </section>
-
-      <section id="about" class="wrapper">
-        <h2 class="prompt"><span class="g">orca@linux</span><span class="m">:~$</span> whoami</h2>
-        <div class="about">
-          <img src="assets/avatar.webp" alt="Hooded engineer at three terminals with the ORCA Linux logo" class="avatar" width="640" height="640" />
-          <div class="term">
-            <div class="term-bar"><i></i><i></i><i></i><span><span class="g">orca</span>@linux: ~</span></div>
-            <div class="term-body">
-              <p>Embedded Linux and systems engineer based in Cairo, Egypt.</p>
-              <p>
-                I work close to the hardware: kernel modules, device drivers, bootloaders and
-                firmware updates for ARM Cortex-M, plus Linux system programming, memory management
-                and emulators.
-              </p>
-              <p>
-                When a tool doesn't exist I build it, usually in C, C++ or Python, with a Qt front end
-                when it needs one.
-              </p>
-              <p class="ok">[ OK ] built without warnings. shipping.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="wrapper">
-        <h2 class="prompt"><span class="g">orca@linux</span><span class="m">:~$</span> ls ~/projects</h2>
-        <div class="grid">
-          <a class="card" href="https://github.com/orcalinux/bootwire" target="_blank" rel="noopener">
-            <h3><i class="fa-regular fa-folder"></i> bootwire</h3>
-            <p>Reliable firmware updates for ARM Cortex-M over UART: protocol spec, Python library, CLI, desktop app and simulator.</p>
-            <footer><span class="lang py">Python</span><span class="tags">cortex-m · uart · bootloader</span></footer>
-          </a>
-          <a class="card" href="https://github.com/orcalinux/system-programming-under-linux" target="_blank" rel="noopener">
-            <h3><i class="fa-regular fa-folder"></i> system-programming-under-linux</h3>
-            <p>Linux system programming from the STMicroelectronics internship: syscalls, namespaces, a heap allocator, QEMU and Yocto.</p>
-            <footer><span class="lang c">C</span><span class="tags">linux · syscalls · qemu</span></footer>
-          </a>
-          <a class="card" href="https://github.com/orcalinux/embedded-linux-diploma" target="_blank" rel="noopener">
-            <h3><i class="fa-regular fa-folder"></i> embedded-linux-diploma</h3>
-            <p>Kernel development, Yocto image customisation, Raspberry Pi, modern C++ and device drivers for embedded Linux.</p>
-            <footer><span class="lang cpp">C++</span><span class="tags">yocto · drivers · modern c++</span></footer>
-          </a>
-          <a class="card" href="https://github.com/orcalinux/GPS-Distance-Tracking-System" target="_blank" rel="noopener">
-            <h3><i class="fa-regular fa-folder"></i> GPS-Distance-Tracking-System</h3>
-            <p>Embedded GPS distance tracker on ARM in C and assembly, built with CMake and Make.</p>
-            <footer><span class="lang c">C</span><span class="tags">arm · gps · embedded c</span></footer>
-          </a>
-          <a class="card" href="https://github.com/orcalinux/chip8-emulator" target="_blank" rel="noopener">
-            <h3><i class="fa-regular fa-folder"></i> chip8-emulator</h3>
-            <p>CHIP-8 emulator in C with SDL2 graphics and input, configurable window size and colours.</p>
-            <footer><span class="lang c">C</span><span class="tags">emulator · sdl2 · low-level</span></footer>
-          </a>
-          <a class="card" href="https://github.com/orcalinux/c-json" target="_blank" rel="noopener">
-            <h3><i class="fa-regular fa-folder"></i> c-json</h3>
-            <p>Lightweight cross-platform JSON parser for C: objects, arrays, strings, numbers, booleans and null.</p>
-            <footer><span class="lang c">C</span><span class="tags">parser · scanner · json</span></footer>
-          </a>
-        </div>
-      </section>
-
-      <section id="stack" class="wrapper">
-        <h2 class="prompt"><span class="g">orca@linux</span><span class="m">:~$</span> cat toolbox.txt</h2>
-        <ul class="chip-list">
-          <li>C</li><li>C++</li><li>Python</li><li>Rust</li><li>Bash</li><li>Assembly</li>
-          <li>Linux Kernel</li><li>Device Drivers</li><li>Yocto</li><li>QEMU</li>
-          <li>STM32</li><li>ARM Cortex-M</li><li>FreeRTOS</li><li>AUTOSAR</li>
-          <li>Qt / PySide6</li><li>SDL2</li><li>Verilog</li><li>CMake</li><li>Docker</li>
-        </ul>
-      </section>
-
-      <section class="quote">
-        <blockquote>
-          “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”
-          <span>— Martin Fowler</span>
-        </blockquote>
-      </section>
-    </main>
-
-    <footer class="site-footer"><code>[ OK ] reached target orcalinux.site</code> · © 2026 orcalinux</footer>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
 
     <script>
-      const nav = document.querySelector(".navbar");
-      addEventListener("scroll", () => nav.classList.toggle("scrolled", scrollY > 20), { passive: true });
+      (function () {
+        var d = document.documentElement;
+        d.classList.add("js");
+        try {
+          if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !sessionStorage.getItem("orca-booted")) d.classList.add("booting");
+        } catch (e) {}
+        setTimeout(function () { d.classList.remove("booting"); }, 7000);
+      })();
     </script>
+  </head>
+  <body>
+    <a class="skip" href="#examples">Skip to projects</a>
+
+    <header class="manhead" data-print>
+      <span>ORCALINUX(1)</span>
+      <span class="mid">User Commands</span>
+      <span>ORCALINUX(1)</span>
+    </header>
+
+    <div class="shell">
+      <nav class="index" aria-label="Sections">
+        <ul>
+          <li><a href="#name">NAME</a></li>
+          <li><a href="#synopsis">SYNOPSIS</a></li>
+          <li><a href="#description">DESCRIPTION</a></li>
+          <li><a href="#options">OPTIONS</a></li>
+          <li><a href="#examples">EXAMPLES</a></li>
+          <li><a href="#files">FILES</a></li>
+          <li><a href="#see-also">SEE ALSO</a></li>
+          <li><a href="#bugs">BUGS</a></li>
+          <li><a href="#author">AUTHOR</a></li>
+        </ul>
+        <span class="index-marker" aria-hidden="true"></span>
+        <p class="index-keys" aria-hidden="true"><kbd>j</kbd><kbd>k</kbd> scroll · <kbd>/</kbd> search · <kbd>h</kbd> help</p>
+      </nav>
+
+      <main class="page" id="page">
+        <p class="prompt" data-print><span class="ps1">orca@linux</span><span class="ps2">:~$</span> <span id="cmd">man orcalinux</span><span class="caret" aria-hidden="true"></span></p>
+
+        <section id="name" class="sec sec-name">
+          <div class="name-text">
+            <div class="wordmark" role="img" aria-label="ORCA LINUX">
+              <pre class="ascii" aria-hidden="true"><span data-print> ██████╗ ██████╗  ██████╗ █████╗ </span>
+<span data-print>██╔═══██╗██╔══██╗██╔════╝██╔══██╗</span>
+<span data-print>██║   ██║██████╔╝██║     ███████║</span>
+<span data-print>██║   ██║██╔══██╗██║     ██╔══██║</span>
+<span data-print>╚██████╔╝██║  ██║╚██████╗██║  ██║</span>
+<span data-print> ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝</span></pre>
+              <p class="linux" aria-hidden="true" data-print>L I N U X</p>
+            </div>
+            <h2 data-print>NAME</h2>
+            <div class="body" data-print>
+              <p><b>orcalinux</b> — embedded Linux &amp; systems engineer, Cairo, Egypt</p>
+              <p class="src">source: <a href="https://github.com/orcalinux">github.com/orcalinux</a></p>
+            </div>
+          </div>
+          <figure class="avatar" data-print>
+            <img src="assets/avatar.webp" alt="Hooded engineer seen from behind at three terminals, ORCA LINUX logo on the hoodie" width="640" height="640" />
+          </figure>
+        </section>
+
+        <section id="synopsis" class="sec">
+          <h2 data-print>SYNOPSIS</h2>
+          <div class="body" data-print>
+            <p class="synopsis">
+              <b>orcalinux</b>
+              <button class="flag" data-flag="kernel" aria-pressed="false">[<b>--kernel</b>]</button>
+              <button class="flag" data-flag="bootloader" aria-pressed="false">[<b>--bootloader</b>]</button>
+              <button class="flag" data-flag="mcu" aria-pressed="false">[<b>--mcu</b>]</button>
+              <button class="flag" data-flag="sysprog" aria-pressed="false">[<b>--sysprog</b>]</button>
+              <button class="flag" data-flag="emu" aria-pressed="false">[<b>--emu</b>]</button>
+              <button class="flag" data-flag="tools" aria-pressed="false">[<b>--tools</b>]</button>
+              <u>idea</u>&nbsp;…
+            </p>
+            <p class="hint">Flags are live: pick one to filter <a href="#examples">EXAMPLES</a>.</p>
+          </div>
+        </section>
+
+        <section id="description" class="sec">
+          <h2>DESCRIPTION</h2>
+          <div class="body">
+            <p><b>orcalinux</b> works close to the hardware: kernel modules, device drivers, bootloaders and firmware updates for ARM Cortex-M, plus Linux system programming, memory management and emulators.</p>
+            <p>Given an <u>idea</u>, <b>orcalinux</b> tends to ship the whole toolchain around it: a protocol spec, a library, a CLI, a desktop app and a simulator, then writes the course material so others can build it too.</p>
+          </div>
+        </section>
+
+        <section id="options" class="sec">
+          <h2>OPTIONS</h2>
+          <dl class="body options">
+            <dt><button class="flag" data-flag="kernel" aria-pressed="false"><b>-k</b>, <b>--kernel</b></button></dt>
+            <dd>Linux kernel modules, device drivers and Yocto images for embedded boards.</dd>
+            <dt><button class="flag" data-flag="bootloader" aria-pressed="false"><b>-b</b>, <b>--bootloader</b></button></dt>
+            <dd>Bootloaders and reliable firmware updates over UART for ARM Cortex-M.</dd>
+            <dt><button class="flag" data-flag="mcu" aria-pressed="false"><b>-m</b>, <b>--mcu</b></button></dt>
+            <dd>Bare-metal and FreeRTOS firmware on STM32 / ARM Cortex-M: drivers, TFT displays, GPS.</dd>
+            <dt><button class="flag" data-flag="sysprog" aria-pressed="false"><b>-s</b>, <b>--sysprog</b></button></dt>
+            <dd>Linux system programming in C: syscalls, namespaces, allocators, reusable libraries.</dd>
+            <dt><button class="flag" data-flag="emu" aria-pressed="false"><b>-e</b>, <b>--emu</b></button></dt>
+            <dd>Machines from first principles: a CHIP-8 emulator, a 6502 emulator, Verilog CPU parts.</dd>
+            <dt><button class="flag" data-flag="tools" aria-pressed="false"><b>-t</b>, <b>--tools</b></button></dt>
+            <dd>Desktop tooling and compilers: Qt / PySide6 GUIs, a TINY-language compiler.</dd>
+          </dl>
+        </section>
+
+        <section id="examples" class="sec">
+          <h2>EXAMPLES</h2>
+          <div class="body">
+            <p class="filterline" aria-live="polite">
+              <span class="ps1">$</span> <span id="filter-cmd">orcalinux --all</span>
+              <span class="cmt" id="filter-count"># 8 of 8 examples</span>
+              <button class="clear" id="filter-clear" hidden>clear</button>
+            </p>
+
+            <div class="examples" id="examples-list">
+              <article class="ex" data-flags="mcu bootloader tools">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/bootwire</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/bootwire"><h3>bootwire</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>Reliable firmware updates for ARM Cortex-M over UART: protocol spec, Python library, CLI, desktop app and simulator.</p>
+                <p class="meta"><span class="lang" style="--c:#3572a5">Python</span><span class="topics">cortex-m · stm32 · uart · pyside6 · qt-quick</span></p>
+              </article>
+
+              <article class="ex" data-flags="sysprog kernel bootloader">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/system-programming-under-linux</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/system-programming-under-linux"><h3>system-programming-under-linux</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>System programming internship at STMicroelectronics: syscalls, namespaces, a heap memory allocator, routing, QEMU, Docker / Podman, systemd-nspawn and Yocto.</p>
+                <p class="meta"><span class="lang" style="--c:#8a9aa6">C</span><span class="stars">★ 7</span><span class="topics">linux-syscall · namespaces · qemu · yocto</span></p>
+              </article>
+
+              <article class="ex" data-flags="kernel">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/embedded-linux-diploma</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/embedded-linux-diploma"><h3>embedded-linux-diploma</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>Linux kernel development, Yocto customization, Raspberry Pi, modern C++ and device-driver creation for embedded systems.</p>
+                <p class="meta"><span class="lang" style="--c:#f34b7d">C++</span><span class="stars">★ 9</span><span class="topics">yocto · linux-fundamentals · modern-cpp</span></p>
+              </article>
+
+              <article class="ex" data-flags="mcu">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/GPS-Distance-Tracking-System</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/GPS-Distance-Tracking-System"><h3>GPS-Distance-Tracking-System</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>Embedded GPS distance tracker on ARM, written in C and assembly, built with CMake and Make.</p>
+                <p class="meta"><span class="lang" style="--c:#8a9aa6">C</span><span class="stars">★ 13</span><span class="topics">arm · gps · embedded-c · assembly</span></p>
+              </article>
+
+              <article class="ex" data-flags="emu">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/chip8-emulator</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/chip8-emulator"><h3>chip8-emulator</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>CHIP-8 emulator in C with SDL2 graphics and input. Runs classic 1970s CHIP-8 games with configurable window size and colours.</p>
+                <p class="meta"><span class="lang" style="--c:#8a9aa6">C</span><span class="stars">★ 3</span><span class="topics">emulator · sdl2 · low-level</span></p>
+              </article>
+
+              <article class="ex" data-flags="sysprog">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/c-json</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/c-json"><h3>c-json</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>Lightweight, cross-platform JSON parsing library for C: objects, arrays, strings, numbers, booleans and null with minimal memory overhead.</p>
+                <p class="meta"><span class="lang" style="--c:#8a9aa6">C</span><span class="stars">★ 2</span><span class="topics">json-parser · scanner · parsing</span></p>
+              </article>
+
+              <article class="ex" data-flags="sysprog">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/object-pool-library</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/object-pool-library"><h3>object-pool-library</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>Thread-safe pool of reusable objects in C, with dynamic resizing and a small API for init, object management and teardown.</p>
+                <p class="meta"><span class="lang" style="--c:#8a9aa6">C</span><span class="topics">memory-management · multithreading · thread-safe</span></p>
+              </article>
+
+              <article class="ex" data-flags="tools">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/tiny-language-compiler</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/tiny-language-compiler"><h3>tiny-language-compiler</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>Compiler for the TINY teaching language: lexical analysis, parsing and a GUI to inspect each stage.</p>
+                <p class="meta"><span class="lang" style="--c:#f34b7d">C++</span><span class="topics">compiler-design · parser · scanner</span></p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="files" class="sec">
+          <h2>FILES</h2>
+          <dl class="body files">
+            <dt><a href="https://github.com/orcalinux/IMT_Microcontroller-Architecture-and-Interfacing-with-ARM-Cortex">~/courses/imt-arm-cortex/</a> <span class="stars">★ 21</span></dt>
+            <dd>ARM embedded systems and IoT course: interrupts, real-time processing, communication protocols, TFT displays, Wi-Fi modules, bootloader.</dd>
+            <dt><a href="https://github.com/orcalinux/Microcontroller-Architecture-and-Interfacing-with-ARM-Cortex">~/courses/arm-cortex-workshop/</a> <span class="stars">★ 13</span></dt>
+            <dd>Workshop from C basics to ARM architecture, peripherals, interrupts and FreeRTOS on the STM32F103.</dd>
+            <dt><a href="https://github.com/orcalinux/Computer-Organization-and-Architecture">~/courses/computer-organization/</a> <span class="stars">★ 3</span></dt>
+            <dd>Verilog examples and material: 8086, a programmable interrupt controller, synthesis.</dd>
+            <dt><a href="https://github.com/orcalinux/Automotive-Communication-Protocols-and-Introduction-to-AUTOSAR">~/courses/automotive-autosar/</a> <span class="stars">★ 2</span></dt>
+            <dd>Automotive communication protocols and an introduction to AUTOSAR.</dd>
+            <dt><a href="https://github.com/orcalinux/AVR-Crash-Course">~/courses/avr-crash-course/</a></dt>
+            <dd>A crash course on AVR microcontrollers.</dd>
+            <dt><a href="https://github.com/orcalinux/Autonomous-Car">~/projects/autonomous-car/</a></dt>
+            <dd>STM32F103 car with ultrasonic sensors, GPS and FreeRTOS, avoiding obstacles and reporting live status.</dd>
+          </dl>
+        </section>
+
+        <section id="see-also" class="sec">
+          <h2>SEE ALSO</h2>
+          <p class="body seealso">
+            <a href="https://github.com/orcalinux/bootwire">bootwire</a>(1),
+            <a href="https://github.com/orcalinux/tiny-language-compiler">tiny-language-compiler</a>(1),
+            <a href="https://github.com/orcalinux/c-json">c-json</a>(3),
+            <a href="https://github.com/orcalinux/object-pool-library">object-pool-library</a>(3),
+            <a href="https://github.com/orcalinux/linux-memory-manager">linux-memory-manager</a>(3),
+            <a href="https://github.com/orcalinux/chip8-emulator">chip8-emulator</a>(6),
+            <a href="https://github.com/orcalinux/orcalinux">orcalinux</a>(7)
+          </p>
+        </section>
+
+        <section id="bugs" class="sec">
+          <h2>BUGS</h2>
+          <div class="body">
+            <p>Prefers <b>printf</b> debugging to slides. Found something wrong in a repository? Open an issue on that repository.</p>
+          </div>
+        </section>
+
+        <section id="author" class="sec sec-author">
+          <h2>AUTHOR</h2>
+          <div class="body">
+            <p>Written by <b>orcalinux</b>, Cairo, Egypt.</p>
+            <a class="banner-link" href="https://github.com/orcalinux">
+              <img class="banner" src="assets/banner.webp" alt="ORCA LINUX banner: $ uname -a | make | ./run" width="2000" height="548" loading="lazy" />
+            </a>
+            <a class="cta" href="https://github.com/orcalinux"><span class="ps1">$</span> open github.com/orcalinux <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </section>
+
+        <footer class="manfoot">
+          <span>orcalinux 2026.11</span>
+          <span class="mid">November 2026</span>
+          <span>ORCALINUX(1)</span>
+        </footer>
+      </main>
+    </div>
+
+    <div class="less" id="less">
+      <form class="less-search" id="less-search" hidden>
+        <label for="less-q">/</label>
+        <input id="less-q" type="search" autocomplete="off" spellcheck="false" aria-label="Search this page" />
+      </form>
+      <p class="less-status" id="less-status"><span class="hl">Manual page orcalinux(1)</span> line <span id="less-line" class="num">1</span>/<span id="less-total" class="num">1</span> <span id="less-pct" class="num">(0%)</span> <span class="less-tail">(press h for help or q to quit)</span></p>
+      <p class="less-msg" id="less-msg" aria-live="polite"></p>
+      <div class="less-btns">
+        <button type="button" data-key="/" aria-label="Search">/</button>
+        <button type="button" data-key="h" aria-label="Help">h</button>
+        <button type="button" data-key="g" aria-label="Back to top">g</button>
+      </div>
+    </div>
+
+    <dialog class="help" id="help" aria-labelledby="help-title">
+      <h2 id="help-title">SUMMARY OF LESS COMMANDS</h2>
+      <dl>
+        <dt><kbd>j</kbd> <kbd>k</kbd></dt><dd>Forward / backward a few lines.</dd>
+        <dt><kbd>d</kbd> <kbd>u</kbd></dt><dd>Forward / backward half a window.</dd>
+        <dt><kbd>g</kbd> <kbd>G</kbd></dt><dd>Go to first / last line.</dd>
+        <dt><kbd>/</kbd><u>pattern</u></dt><dd>Search for pattern.</dd>
+        <dt><kbd>n</kbd> <kbd>N</kbd></dt><dd>Next / previous match.</dd>
+        <dt><kbd>1</kbd>–<kbd>6</kbd></dt><dd>Toggle a flag: kernel, bootloader, mcu, sysprog, emu, tools.</dd>
+        <dt><kbd>h</kbd> <kbd>q</kbd> <kbd>Esc</kbd></dt><dd>Show / close this help.</dd>
+      </dl>
+      <form method="dialog"><button>close <kbd>q</kbd></button></form>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js" defer></script>
+    <script src="main.js" defer></script>
   </body>
 </html>
