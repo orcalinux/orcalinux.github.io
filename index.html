@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>orcalinux(1) — embedded Linux &amp; systems engineer</title>
-    <meta name="description" content="orcalinux(1): embedded Linux and systems engineer in Cairo, Egypt. Kernel modules, device drivers, bootloaders, firmware updates, system programming and emulators." />
+    <title>orcalinux(1) — software engineer, from firmware to the cloud</title>
+    <meta name="description" content="orcalinux(1): software engineer in Cairo, Egypt, from firmware to the cloud. Bootloaders and firmware for ARM Cortex-M, Linux kernel and drivers, secure protocols, desktop and web products, CI/CD and self-hosted Linux servers." />
     <meta name="theme-color" content="#050b12" />
-    <meta property="og:title" content="orcalinux(1) — embedded Linux & systems engineer" />
-    <meta property="og:description" content="Kernel modules, device drivers, bootloaders, firmware updates, system programming and emulators." />
+    <meta property="og:title" content="orcalinux(1) — software engineer, from firmware to the cloud" />
+    <meta property="og:description" content="From firmware to the cloud: bootloaders, Linux kernel and drivers, secure protocols, desktop and web products, CI/CD." />
     <meta property="og:image" content="https://orcalinux.github.io/assets/og.png" />
     <meta property="og:url" content="https://orcalinux.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -72,7 +72,7 @@
             </div>
             <h2 data-print>NAME</h2>
             <div class="body" data-print>
-              <p><b>orcalinux</b> — embedded Linux &amp; systems engineer, Cairo, Egypt</p>
+              <p><b>orcalinux</b> — software engineer, from firmware to the cloud: embedded, Linux, DevOps, security, full-stack. Cairo, Egypt</p>
               <p class="src">source: <a href="https://github.com/orcalinux">github.com/orcalinux</a></p>
             </div>
           </div>
@@ -92,6 +92,8 @@
               <button class="flag" data-flag="sysprog" aria-pressed="false">[<b>--sysprog</b>]</button>
               <button class="flag" data-flag="emu" aria-pressed="false">[<b>--emu</b>]</button>
               <button class="flag" data-flag="tools" aria-pressed="false">[<b>--tools</b>]</button>
+              <button class="flag" data-flag="protocols" aria-pressed="false">[<b>--protocols</b>]</button>
+              <button class="flag" data-flag="devops" aria-pressed="false">[<b>--devops</b>]</button>
               <u>idea</u>&nbsp;…
             </p>
             <p class="hint">Flags are live: pick one to filter <a href="#examples">EXAMPLES</a>.</p>
@@ -101,8 +103,9 @@
         <section id="description" class="sec">
           <h2>DESCRIPTION</h2>
           <div class="body">
-            <p><b>orcalinux</b> works close to the hardware: kernel modules, device drivers, bootloaders and firmware updates for ARM Cortex-M, plus Linux system programming, memory management and emulators.</p>
+            <p><b>orcalinux</b> works across the whole stack: firmware and bootloaders for ARM Cortex-M, the Linux kernel and drivers, secure protocols, the desktop and web products on top, then containerises, tests and ships them with CI/CD to self-hosted Linux servers. Most work starts at a datasheet and ends in production.</p>
             <p>Given an <u>idea</u>, <b>orcalinux</b> tends to ship the whole toolchain around it: a protocol spec, a library, a CLI, a desktop app and a simulator, then writes the course material so others can build it too.</p>
+            <p>Trained in embedded systems and system programming, including an internship with STMicroelectronics. Cares about the parts nobody sees: a protocol that survives a pulled cable, a page that works in Arabic as well as English, a tool that says exactly what went wrong.</p>
           </div>
         </section>
 
@@ -114,13 +117,17 @@
             <dt><button class="flag" data-flag="bootloader" aria-pressed="false"><b>-b</b>, <b>--bootloader</b></button></dt>
             <dd>Bootloaders and reliable firmware updates over UART for ARM Cortex-M.</dd>
             <dt><button class="flag" data-flag="mcu" aria-pressed="false"><b>-m</b>, <b>--mcu</b></button></dt>
-            <dd>Bare-metal and FreeRTOS firmware on STM32 / ARM Cortex-M: drivers, TFT displays, GPS.</dd>
+            <dd>Bare-metal and FreeRTOS firmware on STM32 / ARM Cortex-M: drivers, interrupts, TFT displays, GPS, plus CAN, LIN and AUTOSAR, AVR and Infineon AURIX.</dd>
             <dt><button class="flag" data-flag="sysprog" aria-pressed="false"><b>-s</b>, <b>--sysprog</b></button></dt>
             <dd>Linux system programming in C: syscalls, namespaces, allocators, reusable libraries.</dd>
             <dt><button class="flag" data-flag="emu" aria-pressed="false"><b>-e</b>, <b>--emu</b></button></dt>
             <dd>Machines from first principles: a CHIP-8 emulator, a 6502 emulator, Verilog CPU parts.</dd>
             <dt><button class="flag" data-flag="tools" aria-pressed="false"><b>-t</b>, <b>--tools</b></button></dt>
-            <dd>Desktop tooling and compilers: Qt / PySide6 GUIs, a TINY-language compiler.</dd>
+            <dd>Desktop and web products: Qt / QML and PySide6 tools, command-line tools, full-stack TypeScript / Next.js apps on PostgreSQL with Arabic and English right-to-left layouts, and a TINY-language compiler.</dd>
+            <dt><button class="flag" data-flag="protocols" aria-pressed="false"><b>-p</b>, <b>--protocols</b></button></dt>
+            <dd>Framed, checked and retried links between machines (SLIP, CRC, UART), parsers, and end-to-end encryption: X3DH, Double Ratchet and MLS in C++ and Rust, with WebAssembly builds.</dd>
+            <dt><button class="flag" data-flag="devops" aria-pressed="false"><b>-d</b>, <b>--devops</b></button></dt>
+            <dd>Docker and Compose environments, GitHub Actions CI/CD with tests, coverage, fuzzing, CodeQL and tagged releases, systemd services on self-hosted Linux servers, automated backups and Debian packaging.</dd>
           </dl>
         </section>
 
@@ -129,15 +136,15 @@
           <div class="body">
             <p class="filterline" aria-live="polite">
               <span class="ps1">$</span> <span id="filter-cmd">orcalinux --all</span>
-              <span class="cmt" id="filter-count"># 8 of 8 examples</span>
+              <span class="cmt" id="filter-count"># 10 of 10 examples</span>
               <button class="clear" id="filter-clear" hidden>clear</button>
             </p>
 
             <div class="examples" id="examples-list">
-              <article class="ex" data-flags="mcu bootloader tools">
+              <article class="ex" data-flags="mcu bootloader tools protocols devops">
                 <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/bootwire</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
                 <a class="ex-link" href="https://github.com/orcalinux/bootwire"><h3>bootwire</h3><span class="arrow" aria-hidden="true">→</span></a>
-                <p>Reliable firmware updates for ARM Cortex-M over UART: protocol spec, Python library, CLI, desktop app and simulator.</p>
+                <p>Reliable firmware updates for ARM Cortex-M over UART: a stop-and-wait protocol with CRC-checked SLIP frames, a full spec, a Python library, a CLI with a man page, a Debian package, a simulated target and a desktop app with a live frame inspector. 148 tests, including fault injection, on Linux and Windows CI.</p>
                 <p class="meta"><span class="lang" style="--c:#3572a5">Python</span><span class="topics">cortex-m · stm32 · uart · pyside6 · qt-quick</span></p>
               </article>
 
@@ -162,6 +169,12 @@
                 <p class="meta"><span class="lang" style="--c:#8a9aa6">C</span><span class="stars">★ 13</span><span class="topics">arm · gps · embedded-c · assembly</span></p>
               </article>
 
+              <article class="ex" data-flags="sysprog kernel">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/linux-memory-manager</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/linux-memory-manager"><h3>linux-memory-manager</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>A heap memory manager for Linux: a custom low-fragmentation allocator, thread-safe intrusive lists, Doxygen docs and tests.</p>
+                <p class="meta"><span class="lang" style="--c:#8a9aa6">C</span><span class="topics">allocator · memory-management · linux</span></p>
+              </article>
               <article class="ex" data-flags="emu">
                 <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/chip8-emulator</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
                 <a class="ex-link" href="https://github.com/orcalinux/chip8-emulator"><h3>chip8-emulator</h3><span class="arrow" aria-hidden="true">→</span></a>
@@ -169,7 +182,7 @@
                 <p class="meta"><span class="lang" style="--c:#8a9aa6">C</span><span class="stars">★ 3</span><span class="topics">emulator · sdl2 · low-level</span></p>
               </article>
 
-              <article class="ex" data-flags="sysprog">
+              <article class="ex" data-flags="sysprog protocols">
                 <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/c-json</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
                 <a class="ex-link" href="https://github.com/orcalinux/c-json"><h3>c-json</h3><span class="arrow" aria-hidden="true">→</span></a>
                 <p>Lightweight, cross-platform JSON parsing library for C: objects, arrays, strings, numbers, booleans and null with minimal memory overhead.</p>
@@ -188,6 +201,12 @@
                 <a class="ex-link" href="https://github.com/orcalinux/tiny-language-compiler"><h3>tiny-language-compiler</h3><span class="arrow" aria-hidden="true">→</span></a>
                 <p>Compiler for the TINY teaching language: lexical analysis, parsing and a GUI to inspect each stage.</p>
                 <p class="meta"><span class="lang" style="--c:#f34b7d">C++</span><span class="topics">compiler-design · parser · scanner</span></p>
+              </article>
+              <article class="ex" data-flags="tools">
+                <div class="cmd"><span class="ps1">$</span><code>git clone https://github.com/orcalinux/youtube-downloader</code><button class="copy" type="button" aria-label="Copy clone command"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+                <a class="ex-link" href="https://github.com/orcalinux/youtube-downloader"><h3>youtube-downloader</h3><span class="arrow" aria-hidden="true">→</span></a>
+                <p>Command-line downloader for single videos or whole playlists, with a Rich interface, concurrent downloads and clean Ctrl+C handling. Ships with a Dockerfile and Makefile.</p>
+                <p class="meta"><span class="lang" style="--c:#3572a5">Python</span><span class="stars">★ 1</span><span class="topics">cli · docker · makefile</span></p>
               </article>
             </div>
           </div>
@@ -272,7 +291,7 @@
         <dt><kbd>g</kbd> <kbd>G</kbd></dt><dd>Go to first / last line.</dd>
         <dt><kbd>/</kbd><u>pattern</u></dt><dd>Search for pattern.</dd>
         <dt><kbd>n</kbd> <kbd>N</kbd></dt><dd>Next / previous match.</dd>
-        <dt><kbd>1</kbd>–<kbd>6</kbd></dt><dd>Toggle a flag: kernel, bootloader, mcu, sysprog, emu, tools.</dd>
+        <dt><kbd>1</kbd>–<kbd>8</kbd></dt><dd>Toggle a flag: kernel, bootloader, mcu, sysprog, emu, tools, protocols, devops.</dd>
         <dt><kbd>h</kbd> <kbd>q</kbd> <kbd>Esc</kbd></dt><dd>Show / close this help.</dd>
       </dl>
       <form method="dialog"><button>close <kbd>q</kbd></button></form>

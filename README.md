@@ -6,5 +6,5 @@ Live at [orcalinux.github.io](https://orcalinux.github.io). The GitHub profile R
 
 - Plain HTML + CSS + JS with no build step. GSAP 3.13 is loaded from jsDelivr.
 - `index.html` holds the content, `site.css` the styles, `main.js` the behaviour and motion.
-- Try the pager keys: `j`/`k`, `/` to search, `1`–`6` to toggle flags, `h` for help.
+- Try the pager keys: `j`/`k`, `/` to search, `1`–`8` to toggle flags, `h` for help.
 - `DESIGN.md` documents the design system.

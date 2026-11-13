@@ -169,7 +169,7 @@
   const items = $$(".ex", list);
   const order = new Map(items.map((el, i) => [el, i]));
   const flagBtns = $$("[data-flag]");
-  const FLAGS = ["kernel", "bootloader", "mcu", "sysprog", "emu", "tools"];
+  const FLAGS = ["kernel", "bootloader", "mcu", "sysprog", "emu", "tools", "protocols", "devops"];
   let activeFlag = null;
   const applyFlag = (flag, { announce = true } = {}) => {
     activeFlag = activeFlag === flag ? null : flag;
@@ -342,7 +342,7 @@
     const t = e.target;
     if (t.closest && t.closest("input, textarea, select, [contenteditable]")) return;
     if (help.open && e.key !== "q" && e.key !== "h") return;
-    if (/^[1-6]$/.test(e.key)) { applyFlag(FLAGS[+e.key - 1]); return; }
+    if (/^[1-8]$/.test(e.key)) { applyFlag(FLAGS[+e.key - 1]); return; }
     const fn = keys[e.key];
     if (fn) { e.preventDefault(); fn(); }
   });

@@ -40,4 +40,4 @@ Type: JetBrains Mono everywhere (400/600/800). The wordmark is ANSI-Shadow ASCII
 
 ## Keys
 
-`j k d u g G / n N h q`, `1`–`6` toggle flags.
+`j k d u g G / n N h q`, `1`–`8` toggle flags.
