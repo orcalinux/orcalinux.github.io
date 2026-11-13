@@ -95,6 +95,8 @@
     return d;
   };
   const span = (cls, text) => el("span", cls, text);
+  // a two-column row: fixed first column on wide screens, stacked on phones (see .t-cols)
+  const cols = (w, ...parts) => { const d = line(...parts); d.classList.add("t-cols"); d.style.setProperty("--w", w); return d; };
   const link = (href, text) => { const a = el("a", "t-link", text || href); a.href = href; a.target = "_blank"; a.rel = "noopener"; return a; };
   const print = (text, cls) => text.split("\n").forEach((t) => line(cls ? span(cls, t) : t));
   const blank = () => line(" ");
@@ -135,7 +137,7 @@
   const cmds = {
     help() {
       line(span("t-dim", "orcash, the orcalinux shell. Commands:"));
-      HELP.forEach(([c, d]) => line(span("t-cmd", c.padEnd(40)), span("t-dim", d)));
+      HELP.forEach(([c, d]) => cols("40ch", span("t-cmd", c), span("t-dim", d)));
       line(span("t-dim", "Tab completes commands and paths; ↑/↓ walk history."));
     },
     ls(args) {
@@ -153,7 +155,7 @@
           const c = n.children[k];
           const d = c.type === "dir";
           const size = d ? 4096 : c.text.length;
-          line(span("t-dim", `${d ? "d" : "-"}rw${d ? "x" : "-"}r-${d ? "x" : "-"}r-${d ? "x" : "-"}  orca orca ${String(size).padStart(6)} Nov 13  `), span(d ? "t-dir" : "", k + (d ? "/" : "")));
+          line(span("t-dim t-perm", `${d ? "d" : "-"}rw${d ? "x" : "-"}r-${d ? "x" : "-"}r-${d ? "x" : "-"}  `), span("t-dim t-wide", `orca orca ${String(size).padStart(6)} Nov 13  `), span(d ? "t-dir" : "", k + (d ? "/" : "")));
         });
       } else {
         const d = el("div", "t-line t-grid");
@@ -220,7 +222,7 @@
       if (!hits) print(`grep: no match for '${q}'`, "t-dim");
     },
     projects() {
-      projects.forEach((p) => line(span("t-dir", p.name.padEnd(32)), span("t-dim", `${(p.lang || "").padEnd(8)}${p.stars ? ("★ " + p.stars).padEnd(6) : "      "}`), span("t-cmd", p.flags.map((f) => "--" + f).join(" "))));
+      projects.forEach((p) => cols("32ch", span("t-dir", p.name), span("t-dim", `${(p.lang || "").padEnd(8)}${p.stars ? ("★ " + p.stars).padEnd(6) : "      "}`), span("t-cmd", p.flags.map((f) => "--" + f).join(" "))));
       line(span("t-dim", "Try: orcalinux --kernel   or   cat projects/bootwire/README.md"));
     },
     orcalinux(args) {
@@ -300,7 +302,7 @@
       options.forEach((o) => {
         const name = (o.flag.match(/--(\w+)/) || [])[1] || o.flag;
         const used = projects.filter((p) => p.flags.includes(name)).map((p) => p.name);
-        line(span("t-dir", ("orca_" + name).padEnd(24)), String(o.text.length * 64).padStart(5) + "  ", span("t-dim", `${used.length} ${used.slice(0, 3).join(",")}`));
+        line(span("t-dir", ("orca_" + name).padEnd(24)), String(o.text.length * 64).padStart(5) + "  ", span("t-dim", String(used.length)), span("t-dim t-wide", " " + used.slice(0, 3).join(",")));
       });
     },
     dmesg() {
@@ -370,10 +372,25 @@
     }
   };
 
+  const histUp = () => { if (!history.length) return; hIdx = hIdx < 0 ? history.length - 1 : Math.max(0, hIdx - 1); input.value = history[hIdx]; };
+  const histDown = () => { if (hIdx < 0) return; hIdx++; if (hIdx >= history.length) { hIdx = -1; input.value = ""; } else input.value = history[hIdx]; };
+  // on-screen keys: phone keyboards have no Tab or arrows
+  const keys = $(".crt-keys");
+  if (keys) {
+    keys.addEventListener("pointerdown", (e) => { if (e.target.closest("button")) e.preventDefault(); }); // keep the keyboard up
+    keys.addEventListener("click", (e) => {
+      const b = e.target.closest("button");
+      if (!b) return;
+      if (b.dataset.run) { input.value = ""; hIdx = -1; run(b.dataset.run); }
+      else ({ tab: complete, up: histUp, down: histDown })[b.dataset.k]();
+      scrollEnd();
+    });
+  }
+
   input.addEventListener("keydown", (e) => {
     if (e.key === "Tab") { e.preventDefault(); complete(); }
-    else if (e.key === "ArrowUp") { e.preventDefault(); if (!history.length) return; hIdx = hIdx < 0 ? history.length - 1 : Math.max(0, hIdx - 1); input.value = history[hIdx]; }
-    else if (e.key === "ArrowDown") { e.preventDefault(); if (hIdx < 0) return; hIdx++; if (hIdx >= history.length) { hIdx = -1; input.value = ""; } else input.value = history[hIdx]; }
+    else if (e.key === "ArrowUp") { e.preventDefault(); histUp(); }
+    else if (e.key === "ArrowDown") { e.preventDefault(); histDown(); }
     else if (e.key === "Escape") { e.preventDefault(); close(); }
     else if (e.ctrlKey && e.key.toLowerCase() === "l") { e.preventDefault(); cmds.clear(); }
     else if (e.ctrlKey && e.key.toLowerCase() === "c") { e.preventDefault(); line(span("t-user", "guest@orca"), ":", span("t-path", pretty(cwd)), "$ ", input.value, span("t-dim", "^C")); input.value = ""; hIdx = -1; scrollEnd(); }
@@ -402,9 +419,19 @@
     });
   };
   const inner = $(".crt-inner"), crt = $(".crt"), backdrop = $(".term-backdrop");
+  // keep the whole terminal above the on-screen keyboard
+  const vv = window.visualViewport;
+  const fit = () => {
+    if (!opened || !vv) return;
+    drawer.style.setProperty("--vvh", vv.height + "px");
+    drawer.style.setProperty("--vvt", vv.offsetTop + "px");
+    scrollEnd();
+  };
+  if (vv) { vv.addEventListener("resize", fit); vv.addEventListener("scroll", fit); }
   const open = () => {
     if (opened) return input.focus();
     opened = true;
+    fit();
     lastFocus = document.activeElement;
     drawer.hidden = false;
     document.body.classList.add("term-open");

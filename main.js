@@ -338,7 +338,7 @@
     "/": openSearch,
     n: () => (ranges.length ? go(cur + 1) : say("No previous search pattern")),
     N: () => (ranges.length ? go(cur - 1) : say("No previous search pattern")),
-    h: () => (help.open ? help.close() : help.showModal()),
+    h: () => (help.open ? help.close() : (help.showModal(), (help.scrollTop = 0))),
     q: () => (help.open ? help.close() : say("q? This pager never quits. Try h for help, or g to go back to the top.")),
     Escape: () => { clearHits(); say("", 1); },
   };

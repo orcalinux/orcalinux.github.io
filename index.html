@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>orcalinux(1) — software engineer, from firmware to the cloud</title>
     <meta name="description" content="orcalinux(1): software engineer in Cairo, Egypt, from firmware to the cloud. Bootloaders and firmware for ARM Cortex-M, Linux kernel and drivers, secure protocols, desktop and web products, CI/CD and self-hosted Linux servers." />
     <meta name="theme-color" content="#050b12" />
@@ -275,7 +275,7 @@
         <label for="less-q">/</label>
         <input id="less-q" type="search" autocomplete="off" spellcheck="false" aria-label="Search this page" />
       </form>
-      <p class="less-status" id="less-status"><span class="hl">Manual page orcalinux(1)</span> line <span id="less-line" class="num">1</span>/<span id="less-total" class="num">1</span> <span id="less-pct" class="num">(0%)</span> <span class="less-tail">(press h for help or q to quit)</span></p>
+      <p class="less-status" id="less-status"><span class="hl less-long">Manual page orcalinux(1)</span><span class="less-long"> line </span><span id="less-line" class="num">1</span>/<span id="less-total" class="num">1</span> <span id="less-pct" class="num">(0%)</span> <span class="less-tail">(press h for help or q to quit)</span></p>
       <p class="less-msg" id="less-msg" aria-live="polite"></p>
       <div class="less-btns">
         <button type="button" class="less-term" data-term-toggle aria-expanded="false" aria-controls="term" aria-label="Open terminal">&gt;_</button>
@@ -303,6 +303,16 @@
             </form>
           </div>
           <div class="crt-fx" aria-hidden="true"></div>
+        </div>
+        <div class="crt-keys" role="group" aria-label="Terminal keys">
+          <button type="button" data-k="tab">tab</button>
+          <button type="button" data-k="up" aria-label="Previous command">↑</button>
+          <button type="button" data-k="down" aria-label="Next command">↓</button>
+          <button type="button" data-run="help">help</button>
+          <button type="button" data-run="ls">ls</button>
+          <button type="button" data-run="projects">projects</button>
+          <button type="button" data-run="neofetch">neofetch</button>
+          <button type="button" data-run="clear">clear</button>
         </div>
         <div class="crt-foot" aria-hidden="true"><span>TAB complete</span><span>↑↓ history</span><span>ESC close</span></div>
       </div>
