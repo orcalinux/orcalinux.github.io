@@ -98,7 +98,8 @@
   const link = (href, text) => { const a = el("a", "t-link", text || href); a.href = href; a.target = "_blank"; a.rel = "noopener"; return a; };
   const print = (text, cls) => text.split("\n").forEach((t) => line(cls ? span(cls, t) : t));
   const blank = () => line(" ");
-  const scrollEnd = () => { out.scrollTop = out.scrollHeight; };
+  const scroller = $(".crt-inner");
+  const scrollEnd = () => { scroller.scrollTop = scroller.scrollHeight; };
   const setPrompt = () => {
     promptEl.replaceChildren(span("t-user", "guest@orca"), ":", span("t-path", pretty(cwd)), "$ ");
     title.textContent = `guest@orca: ${pretty(cwd)}`;
@@ -385,7 +386,7 @@
     run(v);
     scrollEnd();
   });
-  out.addEventListener("click", (e) => { if (!e.target.closest("a") && !getSelection().toString()) input.focus({ preventScroll: true }); });
+  scroller.addEventListener("click", (e) => { if (!e.target.closest("a") && !getSelection().toString()) input.focus({ preventScroll: true }); });
 
   /* ───────── open / close (quake-style drawer) ───────── */
   let opened = false, greeted = false, lastFocus = null;

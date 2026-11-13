@@ -571,10 +571,13 @@ body.term-open { overflow: hidden; }
   overflow: hidden;
 }
 .crt-inner {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   padding: 1rem 1.2rem 0.9rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.35) transparent;
+  cursor: text;
   font-family: "VT323", var(--mono);
   font-size: 1.42rem;
   line-height: 1.18;
@@ -582,7 +585,7 @@ body.term-open { overflow: hidden; }
   text-shadow: 0 0 6px rgba(0, 229, 255, 0.65), 0 0 18px rgba(0, 229, 255, 0.25);
   transform-origin: 50% 50%;
 }
-.crt-out { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: rgba(0, 229, 255, 0.35) transparent; }
+.crt-out:empty { display: none; }
 .t-line { white-space: pre-wrap; overflow-wrap: anywhere; min-height: 1.18em; }
 .t-grid { display: flex; flex-wrap: wrap; gap: 0 2.5ch; }
 .t-echo { margin-top: 0.25em; }
